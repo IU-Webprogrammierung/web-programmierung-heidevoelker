@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>dieHeide</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+  <!-- hier kommen noch die styles bzw. Verlinkungen zu den Styles rein -->
+  <!-- hier kommen noch die Verlinkungen zu den Fonts rein -->
+</head>
+
+<body>
+
+<!-- Navigation -->
+<div>
+  <a href="index.html">dieHeide</a>
+  <a href="about.html">about</a>
+  <a href="work.html">work</a>
+  <a href="contact.html">contact</a>
+</div>
+
+<!-- Header -->
+<img src="img/about_header.png" alt="Bild">
+
+<!-- Content -->
+<h2>Wer ich bin und außerdem wieviele</h2>
+<p>Hier steht dann also ein Text über mich, obwohl ja niemand lange Texte liest, aber irgendwie möchte ich mich ja schon vorstellen. Die Aufmerksamkeitsspanne eines Goldfisches beträgt 9 Sekunden, hab ich mal von einem Dozenten gehört. Danach habe ich ihm nicht mehr zugehört.</p>
+  <p>Geboren 1981 in Frechen / Köln (Sternzeichen Widder, falls das jemand wissen möchte)</p>
+  <br>&#183; 2001–2006 Mediengestalterin bei Schaufler Group GmbH
+  <br>&#183; 2006–2008 Bildbearbeiterin bei Mundocom / Publicis
+  <br>&#183; 2008–2011 Junior Art Director bei Cheil Germany 
+  <br>&#183; 2011–2018 Freelance Art Director & Flugbegleiterin<br>
+  <br>&#183; seit 2018 UX Challenger bei rabbit eMarketing
+  <br>&#183; seit 2021 Studium UX Design (B.A.)</p>
+
+  <h2>Expertise</h2>
+  <p>Design & Strategie, Corporate Identity, Campaigning, Online Marketing, Designkonzeption, Art Direction, Brainskills & Empathie</p>
+
+  <h2>Tools</h2>
+  <p>Figma, Adobe Creative Cloud, Pen & Paper, Miro, Trello, Brain is braining 24/7</p>
+
+  <h2>Brand Expertise</h2>
+  <img src="img/dekabank.png" alt="Hankook Logo"><br>
+  <img src="img/fraport.png" alt="Hankook Logo"><br>
+  <img src="img/helaba.png" alt="Hankook Logo"><br>
+  <img src="img/loreal.png" alt="Hankook Logo"><br>
+  <img src="img/nestle.png" alt="Hankook Logo"><br>
+  <img src="img/samsung.png" alt="Hankook Logo"><br>
+  <img src="img/hankook.png" alt="Hankook Logo"><br>
+  <img src="img/opel.png" alt="Hankook Logo"><br>
+  <img src="img/thomascook.png" alt="Hankook Logo"><br>
+  <img src="img/ezb.png" alt="Hankook Logo"><br>
+  <img src="img/bsh.png" alt="Hankook Logo"><br>
+  <img src="img/zurich.png" alt="Hankook Logo"><br>
+  <img src="img/lottohessen.png" alt="Hankook Logo"><br>
+  <img src="img/Lufthansa_cargo.png" alt="Hankook Logo"><br>
+
+  <img src="img/about_1.png" alt="Bild">
+  <img src="img/about_2.png" alt="Bild">
+  <img src="img/about_3.png" alt="Bild">
+  <img src="img/about_4.png" alt="Bild">
+  <img src="img/about_5.png" alt="Bild">
+  <img src="img/about_6.png" alt="Bild">
+
+<!-- Footer -->
+<div>
+    <hr>
+    <h2>Let's connect</h2>
+    <div>+49 177 4208556<br><a href="mailto:mail@bunnysecretservice.com">mail@bunnysecretservice.com</a></div><br>
+    <div><a href="https://www.linkedin.com/in/dieheide" target="_blank">linkedin</a></div>
+    <div><a href="https://www.behance.net/heidevlker" target="_blank">behance</a></div>
+    <div><a href="https://www.instagram.com/bunnysecretservice/" target="_blank">instagram</a></div><br>
+    <div>Impressum<br>Datenschutz</div><br>
+    <div>Back to top</div>
+    </div>
+    
+    </body>
+    
+    </html>
