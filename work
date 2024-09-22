@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>dieHeide</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+  <!-- hier kommen noch die styles bzw. Verlinkungen zu den Styles rein -->
+  <!-- hier kommen noch die Verlinkungen zu den Fonts rein -->
+</head>
+
+<body>
+
+<!-- Navigation -->
+<div>
+  <a href="index.html">dieHeide</a>
+  <a href="about.html">about</a>
+  <a href="work.html">work</a>
+  <a href="contact.html">contact</a>
+</div>
+
+<!-- Header -->
+<img src="img/work_header.png" alt="Bild">
+
+<!-- Content -->
+<hr>
+<h2>case study: website – konzeption, design, prototyping</h2>
+    <div>Hier wird kurz erklärt, was für ein Projekt das hier ist, was ich alles gemacht habe und dann gibt es noch einen Textlink, der vielleicht animiert ist, der zur Unterseite führt.<br>
+    <img src="img/work_1.png" alt="Bild"><br>
+<h2>case study: mobile app – konzeption, design, prototyping</h2>
+    <div>Hier wird kurz erklärt, was für ein Projekt das hier ist, was ich alles gemacht habe und dann gibt es noch einen Textlink, der vielleicht animiert ist, der zur Unterseite führt.<br>
+    <img src="img/work_2.png" alt="Bild"><br>
+<h2>editorial design</h2>
+    <div>Hier wird kurz erklärt, was für ein Projekt das hier ist, was ich alles gemacht habe und dann gibt es noch einen Textlink, der vielleicht animiert ist, der zur Unterseite führt.<br>
+    <img src="img/work_3.png" alt="Bild"><br>
+<h2>case study: software – konzeption & design</h2>
+    <div>Hier wird kurz erklärt, was für ein Projekt das hier ist, was ich alles gemacht habe und dann gibt es noch einen Textlink, der vielleicht animiert ist, der zur Unterseite führt.<br>
+    <img src="img/work_4.png" alt="Bild"><br>
+
+<!-- Footer -->
+<div>
+    <hr>
+    <h2>Let's connect</h2>
+    <div>+49 177 4208556<br><a href="mailto:mail@bunnysecretservice.com">mail@bunnysecretservice.com</a></div><br>
+    <div><a href="https://www.linkedin.com/in/dieheide" target="_blank">linkedin</a></div>
+    <div><a href="https://www.behance.net/heidevlker" target="_blank">behance</a></div>
+    <div><a href="https://www.instagram.com/bunnysecretservice/" target="_blank">instagram</a></div><br>
+    <div>Impressum<br>Datenschutz</div><br>
+    <div>Back to top</div>
+    </div>
+    
+    </body>
+    
+    </html>
