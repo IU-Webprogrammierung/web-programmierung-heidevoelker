@@ -53,36 +53,17 @@
       grid-template-rows: 1fr auto;
     }
 
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-    }
-
-    li {
-      float: left;
-    }
-
-    li a {
-      display: block;
-      color: white;
-      padding: 16px 30px 10px 0px;
-      text-decoration: none;
-    }
-
-    li a:hover {
-      text-decoration: underline;
-      text-decoration-line: 1px;
-    }
-
-    h1 {}
-
-    h2 {
+    h1 {
       font: 300;
       font-style: italic;
       font-size: 72px;
       margin: 0;
+    }
+
+    h2 {
+      font-style: italic;
+      font-size: 40px;
+      margin-bottom: 10px;
     }
 
     h3 {
@@ -110,14 +91,14 @@
       padding: 3px;
       background: black;
       width: 60px;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
 
     .line_white {
       padding: 3px;
       background: white;
       width: 60px;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
 
     .links {
@@ -133,12 +114,14 @@
     .bild {
       width: 100%;
       height: auto;
+      margin-bottom: 10px;
     }
 
     .text_in_box {
       padding-left: 50px;
       padding-right: 50px;
       padding-top: 10px;
+      margin-top: 20px;
       color: white;
       background-color: black;
     }
@@ -154,7 +137,7 @@
       width: 100%;
     }
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 600px) {
 
       body {
         font: 200 14px Noto Sans;
@@ -176,7 +159,7 @@
   <header class="header">
     <nav>
       <div class="topnav">
-        <a href="index.html"><strong>dieHeide</strong></a>
+        <a href="index.html" style="text-decoration: none;"><strong>dieHeide</strong></a>
         <a href="contact.html" class="split">contact</a>
         <a href="work.html" class="split">work</a>
         <a href="about.html" class="split">about</a>
@@ -186,9 +169,10 @@
 
   <main>
     <img src="img/start_header.png" alt="Bild" class="bild">
+    <hr>
     <div><a href="about.html" style="text-decoration: none;">
         <div class="text_in_box">
-          <h2>about</h2>
+          <h4>about</h4>
           <div class="line_white"></div>
           <p>UI/UX Design, Konzeption, Webdesign, Mobile App Design, Editorial Design, Corporate Design, Prototyping</p>
           <p>Define, Research, Ideation, Sketching, Moodboards, Prototyping, Testing, Design Improvements</p><br>
