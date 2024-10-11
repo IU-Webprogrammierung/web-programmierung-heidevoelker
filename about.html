@@ -6,71 +6,249 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>dieHeide</title>
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-  <!-- Verlinkungen zu den Styles -->
-  <!-- Verlinkungen zu den Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .topnav a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 10px 50px 0px 0px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .topnav a:hover {
+      text-decoration: underline;
+    }
+
+    .topnav a.split {
+      float: right;
+      color: black;
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      background-color: white;
+      padding-bottom: 20px;
+    }
+
+    body {
+      font: 200 16px Noto Sans;
+      fallback: arial;
+      line-height: 1, 2;
+      color: black;
+      margin-right: 80px;
+      margin-left: 80px;
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: 1fr auto;
+    }
+
+    h1 {
+      font: 300;
+      font-style: italic;
+      font-size: 72px;
+      margin: 0;
+    }
+
+    h2 {
+      font: 300;
+      font-style: italic;
+      font-size: 40px;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font: 300;
+      font-style: italic;
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    h4 {
+      font-size: 24px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    h5 {
+      font: 500;
+      font-style: italic;
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .line_black {
+      padding: 3px;
+      background: black;
+      width: 60px;
+      margin-bottom: 20px;
+    }
+
+    .line_white {
+      padding: 3px;
+      background: white;
+      width: 60px;
+      margin-bottom: 40px;
+    }
+
+    .links {
+      text-decoration: underline;
+      text-decoration-thickness: 5%;
+      color: black;
+    }
+
+    .links_menu {
+      color: black;
+    }
+
+    .bild {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .text_in_box {
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 10px;
+      color: white;
+      background-color: black;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 30px;
+      justify-items: left;
+    }
+
+    .footer {
+      display: flex;
+      font-size: 16px;
+      width: fit-content;
+    }
+
+    .footer div {
+      margin-right: 40px;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 600px) {
+
+      body {
+        font: 200 14px Noto Sans;
+        fallback: arial;
+        margin-right: 40px;
+        margin-left: 40px;
+        color: black;
+      }
+
+      .footer {
+        display: block;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <header>
-  <nav>
-    <a href="index.html">dieHeide</a>
-    <a href="about.html">about</a>
-    <a href="work.html">work</a>
-    <a href="contact.html">contact</a>
-  </nav>
+
+  <header class="header">
+    <nav>
+      <div class="topnav">
+        <a href="index.html" style="text-decoration: none;"><strong>dieHeide</strong></a>
+        <a href="contact.html" class="split">contact</a>
+        <a href="work.html" class="split">work</a>
+        <a href="about.html" class="split" style="text-decoration: underline;">about</a>
+      </div>
+    </nav>
   </header>
+
   <main>
-    <img src="img/about_header.png" alt="Bild">
-    <h2>Wer ich bin und außerdem wieviele</h2>
-    <p>Hier steht dann also ein Text über mich, obwohl ja niemand lange Texte liest, aber irgendwie möchte ich mich ja schon vorstellen. Die Aufmerksamkeitsspanne eines Goldfisches beträgt 9 Sekunden, hab ich mal von einem Dozenten gehört. Danach habe ich ihm nicht mehr zugehört.</p>
+    <img src="img/about_header.png" alt="Bild" class="bild">
+    <hr>
+    <h4>Wer ich bin und au&szlig;erdem wieviele</h4>
+    <div class="line_black"></div>
+    <p>Hier steht dann also ein Text über mich, obwohl ja niemand lange Texte liest, aber irgendwie m&ouml;chte ich mich
+      ja
+      schon vorstellen. Die Aufmerksamkeitsspanne eines Goldfisches betr&auml;gt 9 Sekunden, hab ich mal von einem
+      Dozenten
+      geh&ouml;rt. Danach habe ich ihm nicht mehr zugehört.</p>
+
     <p>Geboren 1981 in Frechen / Köln (Sternzeichen Widder, falls das jemand wissen möchte)</p>
-    <br>&#183; 2001–2006 Mediengestalterin bei Schaufler Group GmbH
-    <br>&#183; 2006–2008 Bildbearbeiterin bei Mundocom / Publicis
-    <br>&#183; 2008–2011 Junior Art Director bei Cheil Germany 
-    <br>&#183; 2011–2018 Freelance Art Director & Flugbegleiterin<br>
-    <br>&#183; seit 2018 UX Challenger bei rabbit eMarketing
-    <br>&#183; seit 2021 Studium UX Design (B.A.)</p>
 
-    <h2>Expertise</h2>
-    <p>Design & Strategie, Corporate Identity, Campaigning, Online Marketing, Designkonzeption, Art Direction, Brainskills & Empathie</p>
+    &#183; 2001–2006 Mediengestalterin bei Schaufler Group GmbH Frankfurt<br>
+    &#183; 2006–2008 Bildbearbeiterin bei Mundocom / Publicis Frankfurt<br>
+    &#183; 2008–2011 Junior Art Director bei Cheil Germany<br>
+    &#183; 2011–2018 Freelance Art Director & Lufthansa Flugbegleiterin<br>
 
-    <h2>Brand Expertise</h2>
-    <img src="img/dekabank.png" alt="Hankook Logo"><br>
-    <img src="img/fraport.png" alt="Hankook Logo"><br>
-    <img src="img/helaba.png" alt="Hankook Logo"><br>
-    <img src="img/loreal.png" alt="Hankook Logo"><br>
-    <img src="img/nestle.png" alt="Hankook Logo"><br>
-    <img src="img/samsung.png" alt="Hankook Logo"><br>
-    <img src="img/hankook.png" alt="Hankook Logo"><br>
-    <img src="img/opel.png" alt="Hankook Logo"><br>
-    <img src="img/thomascook.png" alt="Hankook Logo"><br>
-    <img src="img/ezb.png" alt="Hankook Logo"><br>
-    <img src="img/bsh.png" alt="Hankook Logo"><br>
-    <img src="img/zurich.png" alt="Hankook Logo"><br>
-    <img src="img/lottohessen.png" alt="Hankook Logo"><br>
-    <img src="img/Lufthansa_cargo.png" alt="Hankook Logo"><br>
+    <p>&#183; seit 2018 UX Challenger bei rabbit eMarketing Frankfurt<br>
+      &#183; seit 2021 Studium UX Design (B.A.)</p>
 
-    <h2>Tools</h2>
+    <h4>Expertise</h4>
+    <div class="line_black"></div>
+    <p>Design & Strategie, Corporate Identity, Campaigning, Online Marketing, Designkonzeption, Art Direction,
+      Brainskills & Empathie</p>
+
+    <h4>Brand Expertise</h4>
+    <div class="line_black"></div>
+
+    <div class="grid-container">
+      <div><img src="img/dekabank.png" alt="Deka"></div>
+      <div><img src="img/fraport.png" alt="Hankook Logo"><br></div>
+      <div><img src="img/loreal.png" alt="Hankook Logo"><br></div>
+      <div><img src="img/nestle.png" alt="Hankook Logo"><br></div>
+      <div><img src="img/samsung.png" alt="Hankook Logo"><br></div>
+      <div><img src="img/hankook.png" alt="Hankook Logo"><br></div>
+      <div><img src="img/opel.png" alt="Hankook Logo"><br></div>
+      <div><img src="img/thomascook.png" alt="Hankook Logo"><br></div>
+      <div><img src="img/ezb.png" alt="Hankook Logo"><br></div>
+      <div><img src="img/zurich.png" alt="Hankook Logo"><br></div>
+      <div><img src="img/lottohessen.png" alt="Hankook Logo"><br></div>
+      <div><img src="img/Lufthansa_cargo.png" alt="Hankook Logo"><br></div>
+    </div>
+
+    <h4>Tools</h4>
+    <div class="line_black"></div>
     <p>Figma, Adobe Creative Cloud, Pen & Paper, Miro, Trello, Brain is braining 24/7</p>
 
-    <img src="img/about_1.png" alt="Bild">
-    <img src="img/about_2.png" alt="Bild">
-    <img src="img/about_3.png" alt="Bild">
-    <img src="img/about_4.png" alt="Bild">
-    <img src="img/about_5.png" alt="Bild">
-    <img src="img/about_6.png" alt="Bild">
+    <h4>was ich sonst noch mag </h4>
+    <div class="line_black"></div>
+
+    <div>
+      <img src="img/about_1.png" alt="Den Blick aus meinem Fitnessstudio" width="300px">
+      <img src="img/about_2.png" alt="Mein Auto" width="300px">
+      <img src="img/about_3.png" alt="Meinen alten Arbeitsplatz" width="300px">
+      <img src="img/about_4.png" alt="Konzerte und Festivals" width="300px">
+      <img src="img/about_5.png" alt="Berge und Seen" width="300px">
+      <img src="img/about_6.png" alt="Asiatisches Essen" width="300px">
+    </div>
 
   </main>
   <footer>
-    <div>
-      <hr>
-      <h2>Let's connect</h2>
-      <div>+49 177 4208556<br><a href="mailto:mail@bunnysecretservice.com">mail@bunnysecretservice.com</a></div><br>
-      <div><a href="https://www.linkedin.com/in/dieheide" target="_blank">linkedin</a></div>
-      <div><a href="https://www.behance.net/heidevlker" target="_blank">behance</a></div>
-      <div><a href="https://www.instagram.com/bunnysecretservice/" target="_blank">instagram</a></div><br>
+    <h4>Let's connect</h4>
+    <div class="line_black"></div>
+    <div class="footer">
+      <div>+49 177 4208556<br><a href="mailto:mail@bunnysecretservice.com" class="links">mail@bunnysecretservice.com</a>
+      </div><br>
+      <div>
+        <a href="https://www.linkedin.com/in/dieheide" target="_blank" class="links">linkedin</a><br>
+        <a href="https://www.behance.net/heidevlker" target="_blank" class="links">behance</a><br>
+        <a href="https://www.instagram.com/bunnysecretservice/" target="_blank" class="links">instagram</a>
+      </div><br>
       <div>Impressum<br>Datenschutz</div><br>
-      <div>Back to top</div>
+      <div><strong>Back to top</strong></div>
     </div>
   </footer>
 </body>
