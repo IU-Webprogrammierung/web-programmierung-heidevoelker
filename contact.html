@@ -6,43 +6,211 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>dieHeide</title>
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-  <!-- Verlinkungen zu den Styles -->
-  <!-- Verlinkungen zu den Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .topnav a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 10px 50px 0px 0px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .topnav a:hover {
+      text-decoration: underline;
+    }
+
+    .topnav a.split {
+      float: right;
+      color: black;
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      background-color: white;
+      padding-bottom: 20px;
+    }
+
+    body {
+      font: 200 16px Noto Sans;
+      fallback: arial;
+      line-height: 1, 2;
+      color: black;
+      margin-right: 80px;
+      margin-left: 80px;
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: 1fr auto;
+    }
+
+    h1 {
+      font: 300;
+      font-style: italic;
+      font-size: 72px;
+      margin: 0;
+    }
+
+    h2 {
+      font: 300;
+      font-style: italic;
+      font-size: 40px;
+      margin: 0;
+    }
+
+    h3 {
+      font: 300;
+      font-style: italic;
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    h4 {
+      font-size: 24px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    h5 {
+      font: 500;
+      font-style: italic;
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .line_black {
+      padding: 3px;
+      background: black;
+      width: 60px;
+      margin-bottom: 20px;
+    }
+
+    .links {
+      text-decoration: underline;
+      text-decoration-thickness: 5%;
+      color: black;
+    }
+
+    .links_menu {
+      color: black;
+    }
+
+    .bild {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .bild_contact {
+      margin: 10px 10px 10px 0px;
+      height: 200px;
+    }
+
+    .button {
+      background-color: white;
+      color: black;
+      border: 1px solid gray;
+      border-radius: 3px;
+      height: 40px;
+      width: 100px;
+    }
+
+    .button:hover {
+      background-color: black;
+      color: white;
+    }
+
+    .text_in_box {
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 10px;
+      color: white;
+      background-color: black;
+    }
+
+    .footer {
+      display: flex;
+      font-size: 16px;
+      width: fit-content;
+    }
+
+    .footer div {
+      margin-right: 40px;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 600px) {
+
+      body {
+        font: 200 14px Noto Sans;
+        fallback: arial;
+        margin-right: 40px;
+        margin-left: 40px;
+        color: black;
+      }
+
+      .footer {
+        display: block;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <header>
-  <nav>
-    <a href="index.html">dieHeide</a>
-    <a href="about.html">about</a>
-    <a href="work.html">work</a>
-    <a href="contact.html">contact</a>
-  </nav>
-  </header>
-  <main>
-    <img src="img/contact_header.png" alt="Bild"><br>
-    <img src="img/me.jpg" alt="Bild">
-    <div>Heide Völker<br>Konzeption, Art Direction, UX Design</div><br>
 
-    <h2>Schreib mir eine Nachricht</h2>
-    <form action="/action_page.php">
-        <input type="text" id="fname" value="Name" size="80"><br><br>
-        <input type="text" id="fname" value="E-Mail" size="80"><br><br>
-        <textarea name="message" rows="8" cols="80">Deine Nachricht</textarea>
+  <header class="header">
+    <nav>
+      <div class="topnav">
+        <a href="index.html" style="text-decoration: none;"><strong>dieHeide</strong></a>
+        <a href="contact.html" class="split" style="text-decoration: underline;">contact</a>
+        <a href="work.html" class="split">work</a>
+        <a href="about.html" class="split">about</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <img src="img/contact_header.png" alt="Bild" class="bild">
+    <hr>
+    <div><img src="img/me.jpg" alt="Bild" class="bild_contact"></div>
+    <p>Heide Völker<br>Konzeption, Art Direction, UX Design</p>
+    <br>
+
+    <form action="/action_page.php" style="float: left;">
+      <h2>Schreib mir ...</h2><br>
+      <label>Name</label><br>
+      <input required type="text" id="fname" size="40"><br><br>
+      <label>E-Mail-Adresse</label><br>
+      <input required type="email" id="mail" size="40"><br><br>
+      <label>Nachricht</label><br>
+      <textarea required rows="4" cols="50" id="msg"></textarea>
       <br><br>
-        <input type="submit" value="Senden">
-    </form> 
+      <input type="submit" value="Abschicken" class="button">
+    </form>
   </main>
   <footer>
-    <div>
-      <hr>
-      <h2>Let's connect</h2>
-      <div>+49 177 4208556<br><a href="mailto:mail@bunnysecretservice.com">mail@bunnysecretservice.com</a></div><br>
-      <div><a href="https://www.linkedin.com/in/dieheide" target="_blank">linkedin</a></div>
-      <div><a href="https://www.behance.net/heidevlker" target="_blank">behance</a></div>
-      <div><a href="https://www.instagram.com/bunnysecretservice/" target="_blank">instagram</a></div><br>
+    <h4>Let's connect</h4>
+    <div class="line_black"></div>
+    <div class="footer">
+      <div>+49 177 4208556<br><a href="mailto:mail@bunnysecretservice.com" class="links">mail@bunnysecretservice.com</a>
+      </div><br>
+      <div>
+        <a href="https://www.linkedin.com/in/dieheide" target="_blank" class="links">linkedin</a><br>
+        <a href="https://www.behance.net/heidevlker" target="_blank" class="links">behance</a><br>
+        <a href="https://www.instagram.com/bunnysecretservice/" target="_blank" class="links">instagram</a>
+      </div><br>
       <div>Impressum<br>Datenschutz</div><br>
-      <div>Back to top</div>
+      <div><strong>Back to top</strong></div>
     </div>
   </footer>
 </body>
