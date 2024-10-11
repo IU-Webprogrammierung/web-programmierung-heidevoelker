@@ -6,42 +6,217 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>dieHeide</title>
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-  <!-- Verlinkungen zu den Styles -->
-  <!-- Verlinkungen zu den Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .topnav a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 10px 50px 0px 0px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .topnav a:hover {
+      text-decoration: underline;
+    }
+
+    .topnav a.split {
+      float: right;
+      color: black;
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      background-color: white;
+      padding-bottom: 20px;
+    }
+
+    body {
+      font: 200 16px Noto Sans;
+      fallback: arial;
+      line-height: 1, 2;
+      color: black;
+      margin-right: 80px;
+      margin-left: 80px;
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: 1fr auto;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      padding: 16px 30px 10px 0px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      text-decoration: underline;
+      text-decoration-line: 1px;
+    }
+
+    h1 {}
+
+    h2 {
+      font: 300;
+      font-style: italic;
+      font-size: 72px;
+      margin: 0;
+    }
+
+    h3 {
+      font: 300;
+      font-style: italic;
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    h4 {
+      font-size: 24px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    h5 {
+      font: 500;
+      font-style: italic;
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .line_black {
+      padding: 3px;
+      background: black;
+      width: 60px;
+      margin-bottom: 40px;
+    }
+
+    .line_white {
+      padding: 3px;
+      background: white;
+      width: 60px;
+      margin-bottom: 40px;
+    }
+
+    .links {
+      text-decoration: underline;
+      text-decoration-thickness: 5%;
+      color: black;
+    }
+
+    .links_menu {
+      color: black;
+    }
+
+    .bild {
+      width: 100%;
+      height: auto;
+    }
+
+    .text_in_box {
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 10px;
+      color: white;
+      background-color: black;
+    }
+
+    .footer {
+      display: flex;
+      font-size: 16px;
+      width: fit-content;
+    }
+
+    .footer div {
+      margin-right: 40px;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 800px) {
+
+      body {
+        font: 200 14px Noto Sans;
+        fallback: arial;
+        margin-right: 40px;
+        margin-left: 40px;
+        color: black;
+      }
+
+      .footer {
+        display: block;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <header>
-  <nav>
-    <a href="index.html">dieHeide</a>
-    <a href="about.html">about</a>
-    <a href="work.html">work</a>
-    <a href="contact.html">contact</a>
-  </nav>
+
+  <header class="header">
+    <nav>
+      <div class="topnav">
+        <a href="index.html"><strong>dieHeide</strong></a>
+        <a href="contact.html" class="split">contact</a>
+        <a href="work.html" class="split">work</a>
+        <a href="about.html" class="split">about</a>
+      </div>
+    </nav>
   </header>
+
   <main>
-    <img src="img/start_header.png" alt="Bild">  
-    <hr>
-    <a href="about.html"><img src="img/start_about.png" alt="Bild"></a>
-    <p>UI/UX Design, Konzeption, Webdesign, Mobile App Design
-      <br>Editorial Design, Corporate Design, Prototyping</p>
-    <p>Define, Research, Ideation, Sketching, Moodboards
-      <br>Prototyping, Testing, Design Improvements</p>
-    <h2><q>Sie ist ganz okay!</q></h2><p>Zitat von meinem Chef</p>
-    <a href="work.html"><img src="img/start_work.png" alt="Bild"></a>
+    <img src="img/start_header.png" alt="Bild" class="bild">
+    <div><a href="about.html" style="text-decoration: none;">
+        <div class="text_in_box">
+          <h2>about</h2>
+          <div class="line_white"></div>
+          <p>UI/UX Design, Konzeption, Webdesign, Mobile App Design, Editorial Design, Corporate Design, Prototyping</p>
+          <p>Define, Research, Ideation, Sketching, Moodboards, Prototyping, Testing, Design Improvements</p><br>
+        </div>
+      </a>
+    </div>
+
+    <h3><q>Sie ist ganz okay!</q></h3>
+    <p style="text-align: center;">(Zitat von meinem Brudi)</p>
+    <a href="work.html"><img src="img/start_work.png" alt="Bild" class="bild"></a>
   </main>
+
   <footer>
-    <div>
-      <hr>
-      <h2>Let's connect</h2>
-      <div>+49 177 4208556<br><a href="mailto:mail@bunnysecretservice.com">mail@bunnysecretservice.com</a></div><br>
-      <div><a href="https://www.linkedin.com/in/dieheide" target="_blank">linkedin</a></div>
-      <div><a href="https://www.behance.net/heidevlker" target="_blank">behance</a></div>
-      <div><a href="https://www.instagram.com/bunnysecretservice/" target="_blank">instagram</a></div><br>
+    <h4>Let's connect</h4>
+    <div class="line_black"></div>
+    <div class="footer">
+      <div>+49 177 4208556<br><a href="mailto:mail@bunnysecretservice.com" class="links">mail@bunnysecretservice.com</a>
+      </div><br>
+      <div>
+        <a href="https://www.linkedin.com/in/dieheide" target="_blank" class="links">linkedin</a><br>
+        <a href="https://www.behance.net/heidevlker" target="_blank" class="links">behance</a><br>
+        <a href="https://www.instagram.com/bunnysecretservice/" target="_blank" class="links">instagram</a>
+      </div><br>
       <div>Impressum<br>Datenschutz</div><br>
-      <div>Back to top</div>
+      <div><strong>Back to top</strong></div>
     </div>
   </footer>
+
 </body>
 
 </html>
