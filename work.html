@@ -6,47 +6,211 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>dieHeide</title>
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-  <!-- Verlinkungen zu den Styles -->
-  <!-- Verlinkungen zu den Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .topnav a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 10px 50px 0px 0px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .topnav a:hover {
+      text-decoration: underline;
+    }
+
+    .topnav a.split {
+      float: right;
+      color: black;
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      background-color: white;
+      padding-bottom: 20px;
+    }
+
+    body {
+      font: 200 16px Noto Sans;
+      fallback: arial;
+      line-height: 1, 2;
+      color: black;
+      margin-right: 80px;
+      margin-left: 80px;
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: 1fr auto;
+    }
+
+    h1 {
+      font: 300;
+      font-style: italic;
+      font-size: 72px;
+      margin: 0;
+    }
+
+    h2 {
+      font: 300;
+      font-style: italic;
+      font-size: 40px;
+      margin: 0;
+    }
+
+    h3 {
+      font: 300;
+      font-style: italic;
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    h4 {
+      font-size: 24px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    h5 {
+      font: 500;
+      font-style: italic;
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .line_black {
+      padding: 3px;
+      background: black;
+      width: 60px;
+      margin-bottom: 20px;
+    }
+
+    .line_white {
+      padding: 3px;
+      background: white;
+      width: 60px;
+      margin-bottom: 40px;
+    }
+
+    .links {
+      text-decoration: underline;
+      text-decoration-thickness: 5%;
+      color: black;
+    }
+
+    .links_menu {
+      color: black;
+    }
+
+    .bild {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .text_in_box {
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 10px;
+      color: white;
+      background-color: black;
+    }
+
+    .footer {
+      display: flex;
+      font-size: 16px;
+      width: fit-content;
+    }
+
+    .footer div {
+      margin-right: 40px;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 600px) {
+
+      body {
+        font: 200 14px Noto Sans;
+        fallback: arial;
+        margin-right: 40px;
+        margin-left: 40px;
+        color: black;
+      }
+
+      .footer {
+        display: block;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <header>
-  <nav>
-    <a href="index.html">dieHeide</a>
-    <a href="about.html">about</a>
-    <a href="work.html">work</a>
-    <a href="contact.html">contact</a>
-  </nav>
+
+  <header class="header">
+    <nav>
+      <div class="topnav">
+        <a href="index.html" style="text-decoration: none;"><strong>dieHeide</strong></a>
+        <a href="contact.html" class="split">contact</a>
+        <a href="work.html" class="split" style="text-decoration: underline;">work</a>
+        <a href="about.html" class="split">about</a>
+      </div>
+    </nav>
   </header>
+
   <main>
-    <img src="img/work_header.png" alt="Bild">
+    <img src="img/work_header.png" alt="Bild" class="bild">
     <hr>
-        <h2>case study: website – konzeption, design, prototyping</h2>
-            <div>Hier wird kurz erklärt, was für ein Projekt das hier ist, was ich alles gemacht habe und dann gibt es noch einen Textlink, der vielleicht animiert ist, der zur Unterseite führt.<br>
-            <img src="img/work_1.png" alt="Bild"><br>
-        <h2>case study: mobile app – konzeption, design, prototyping</h2>
-            <div>Hier wird kurz erklärt, was für ein Projekt das hier ist, was ich alles gemacht habe und dann gibt es noch einen Textlink, der vielleicht animiert ist, der zur Unterseite führt.<br>
-            <img src="img/work_2.png" alt="Bild"><br>
-        <h2>editorial design</h2>
-            <div>Hier wird kurz erklärt, was für ein Projekt das hier ist, was ich alles gemacht habe und dann gibt es noch einen Textlink, der vielleicht animiert ist, der zur Unterseite führt.<br>
-            <img src="img/work_3.png" alt="Bild"><br>
-        <h2>case study: software – konzeption & design</h2>
-            <div>Hier wird kurz erklärt, was für ein Projekt das hier ist, was ich alles gemacht habe und dann gibt es noch einen Textlink, der vielleicht animiert ist, der zur Unterseite führt.<br>
-            <img src="img/work_4.png" alt="Bild"><br>
-    </main>
-    <footer>
-        <div>
-        <hr>
-        <h2>Let's connect</h2>
-        <div>+49 177 4208556<br><a href="mailto:mail@bunnysecretservice.com">mail@bunnysecretservice.com</a></div><br>
-        <div><a href="https://www.linkedin.com/in/dieheide" target="_blank">linkedin</a></div>
-        <div><a href="https://www.behance.net/heidevlker" target="_blank">behance</a></div>
-        <div><a href="https://www.instagram.com/bunnysecretservice/" target="_blank">instagram</a></div><br>
-        <div>Impressum<br>Datenschutz</div><br>
-        <div>Back to top</div>
-        </div>
-    </footer>
+
+    <h4>Case Study: Website – Konzeption, Design, Prototyping</h4>
+    <div class="line_black"></div>
+    <img src="img/work_1.png" alt="Bild" class="bild"><br>
+    <p>Hier wird kurz erklärt, was für ein Projekt das hier ist, was ich alles gemacht habe und dann gibt es noch
+      einen Textlink, der vielleicht animiert ist, der zur Unterseite führt.</p><br>
+
+    <h4>Case Study: Mobile App – Konzeption, Design, Prototyping</h4>
+    <div class="line_black"></div>
+    <img src="img/work_2.png" alt="Bild" class="bild"><br>
+    <p>Hier wird kurz erklärt, was für ein Projekt das hier ist, was ich alles gemacht habe und dann gibt es noch
+      einen Textlink, der vielleicht animiert ist, der zur Unterseite führt.</p><br>
+
+    <h4>Editorial Design</h4>
+    <div class="line_black"></div>
+    <img src="img/work_3.png" alt="Bild" class="bild"><br>
+    <p>Hier wird kurz erklärt, was für ein Projekt das hier ist, was ich alles gemacht habe und dann gibt es noch
+      einen Textlink, der vielleicht animiert ist, der zur Unterseite führt.</p><br>
+
+    <h4>Case Study: Software – Konzeption & Design</h4>
+    <div class="line_black"></div>
+    <img src="img/work_4.png" alt="Bild" class="bild"><br>
+    <p>Hier wird kurz erklärt, was für ein Projekt das hier ist, was ich alles gemacht habe und dann gibt es
+      noch einen Textlink, der vielleicht animiert ist, der zur Unterseite führt.</p><br>
+
+  </main>
+  <footer>
+    <h4>Let's connect</h4>
+    <div class="line_black"></div>
+    <div class="footer">
+      <div>+49 177 4208556<br><a href="mailto:mail@bunnysecretservice.com" class="links">mail@bunnysecretservice.com</a>
+      </div><br>
+      <div>
+        <a href="https://www.linkedin.com/in/dieheide" target="_blank" class="links">linkedin</a><br>
+        <a href="https://www.behance.net/heidevlker" target="_blank" class="links">behance</a><br>
+        <a href="https://www.instagram.com/bunnysecretservice/" target="_blank" class="links">instagram</a>
+      </div><br>
+      <div>Impressum<br>Datenschutz</div><br>
+      <div><strong>Back to top</strong></div>
+    </div>
+  </footer>
 </body>
-      
+
 </html>
