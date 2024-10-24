@@ -4,224 +4,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>dieHeide</title>
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    .topnav a {
-      float: left;
-      color: black;
-      text-align: center;
-      padding: 10px 50px 0px 0px;
-      text-decoration: none;
-      font-size: 16px;
-    }
-
-    .topnav a:hover {
-      text-decoration: underline;
-    }
-
-    .topnav a.split {
-      float: right;
-      color: black;
-    }
-
-    .header {
-      position: sticky;
-      top: 0;
-      background-color: white;
-      padding-bottom: 20px;
-    }
-
-    body {
-      font: 200 16px Noto Sans;
-      fallback: arial;
-      line-height: 1, 2;
-      color: black;
-      margin-right: 80px;
-      margin-left: 80px;
-      min-height: 100vh;
-      display: grid;
-      grid-template-rows: 1fr auto;
-    }
-
-    h1 {
-      font: 300;
-      font-style: italic;
-      font-size: 72px;
-      margin: 0;
-    }
-
-    h2 {
-      font: 300;
-      font-style: italic;
-      font-size: 40px;
-      margin: 0;
-      margin-bottom: 10px;
-    }
-
-    h3 {
-      font: 300;
-      font-style: italic;
-      font-size: 32px;
-      text-align: center;
-      margin-bottom: 0;
-    }
-
-    h4 {
-      font-size: 24px;
-      text-transform: uppercase;
-      margin-bottom: 10px;
-    }
-
-    h5 {
-      font: 500;
-      font-style: italic;
-      font-size: 24px;
-      margin: 0;
-    }
-
-    .line_black {
-      padding: 3px;
-      background: black;
-      width: 60px;
-      margin-bottom: 20px;
-    }
-
-    .line_white {
-      padding: 3px;
-      background: white;
-      width: 60px;
-      margin-bottom: 40px;
-    }
-
-    .links {
-      text-decoration: underline;
-      text-decoration-thickness: 5%;
-      color: black;
-    }
-
-    .links_menu {
-      color: black;
-    }
-
-    .bild {
-      width: 100%;
-      height: auto;
-      margin-bottom: 10px;
-    }
-
-    .text_in_box {
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-top: 10px;
-      color: white;
-      background-color: black;
-    }
-
-    .grid-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap: 30px;
-      justify-items: left;
-    }
-
-    .footer {
-      display: flex;
-      font-size: 16px;
-      width: fit-content;
-    }
-
-    .footer div {
-      margin-right: 40px;
-      width: 100%;
-    }
-
-    @media screen and (max-width: 600px) {
-
-      body {
-        font: 200 14px Noto Sans;
-        fallback: arial;
-        margin-right: 40px;
-        margin-left: 40px;
-        color: black;
-      }
-
-      .footer {
-        display: block;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <title>dieHeide</title>
 </head>
 
 <body>
 
+  <!-- Navigation -->
   <header class="header">
-    <nav>
-      <div class="topnav">
-        <a href="index.html" style="text-decoration: none;"><strong>dieHeide</strong></a>
-        <a href="contact.html" class="split">contact</a>
-        <a href="work.html" class="split">work</a>
-        <a href="about.html" class="split" style="text-decoration: underline;">about</a>
+    <nav class="nav">
+      <div class="logo">
+        <a href="index.html"><img src="img/Logo_BSS.svg" alt="Logo Bunnysecretservice" class="logo-img"></a>
       </div>
+      <ul class="nav-links">
+        <li class="active-page"><a href="about.html">about</a></li>
+        <li><a href="work.html">work</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
     </nav>
   </header>
 
+  <!-- Content -->
   <main>
-    <img src="img/about_header.png" alt="Bild" class="bild">
+    <img src="img/about_header.png" alt="Bild von mir bei einem Lachanfall" class="bild">
     <hr>
-    <h4>Wer ich bin und au&szlig;erdem wieviele</h4>
+    <h4>Wer ich bin und außerdem wieviele</h4>
     <div class="line_black"></div>
-    <p>Hier steht dann also ein Text über mich, obwohl ja niemand lange Texte liest, aber irgendwie m&ouml;chte ich mich
-      ja
-      schon vorstellen. Die Aufmerksamkeitsspanne eines Goldfisches betr&auml;gt 9 Sekunden, hab ich mal von einem
-      Dozenten
-      geh&ouml;rt. Danach habe ich ihm nicht mehr zugehört.</p>
+    <p>Hier steht ein Text über mich, und da niemand lange Texte liest, fasse ich mich kurz. Die Aufmerksamkeitsspanne
+      eines Goldfisches beträgt 9 Sekunden, hat mal ein Dozent gesagt. Danach habe ich ihm nicht mehr zugehört.</p>
 
-    <p>Geboren 1981 in Frechen / Köln (Sternzeichen Widder, falls das jemand wissen möchte)</p>
+    <p>Geboren 1981 in Frechen / Köln (Sternzeichen Widder, falls das jemand wissen möchte). Mit 13 bin ich nach
+      Frankfurt
+      gezogen, natürlich nicht freiwillig, wer zieht schon freiwillig aus Köln weg, aber mittlerweile bin ich ein
+      richtiges Frankfurt-City-Girl und liebe liebe liebe diese Stadt!</p>
 
-    &#183; 2001–2006 Mediengestalterin bei Schaufler Group GmbH Frankfurt<br>
-    &#183; 2006–2008 Bildbearbeiterin bei Mundocom / Publicis Frankfurt<br>
-    &#183; 2008–2011 Junior Art Director bei Cheil Germany<br>
-    &#183; 2011–2018 Freelance Art Director & Lufthansa Flugbegleiterin<br>
-
-    <p>&#183; seit 2018 UX Challenger bei rabbit eMarketing Frankfurt<br>
-      &#183; seit 2021 Studium UX Design (B.A.)</p>
+    <strong>Ausbildung:</strong><br>
+    &#183; Mediengestalterin bei Schaufler Group GmbH Frankfurt<br>
+    &#183; Studium UX Design (B.A.)<br><br>
+    <strong>Berufserfahrung:</strong> <br>
+    &#183; Bildbearbeiterin bei Mundocom / Publicis Frankfurt<br>
+    &#183; Junior Art Director bei Cheil Germany<br>
+    &#183; Freelance Art Director & Lufthansa Flugbegleiterin<br>
+    &#183; aktuell UX Challenger bei rabbit eMarketing Frankfurt<br>
+    </p>
 
     <h4>Expertise</h4>
     <div class="line_black"></div>
-    <p>Design & Strategie, Corporate Identity, Campaigning, Online Marketing, Designkonzeption, Art Direction,
-      Brainskills & Empathie</p>
+    <p>Design & Strategie, Corporate Identity, Kampagnenentwicklung, Online Marketing, Designkonzeption, Art Direction
+    </p>
 
     <h4>Brand Expertise</h4>
     <div class="line_black"></div>
 
     <div class="grid-container">
-      <div><img src="img/dekabank.png" alt="Deka"></div>
-      <div><img src="img/fraport.png" alt="Hankook Logo"><br></div>
-      <div><img src="img/loreal.png" alt="Hankook Logo"><br></div>
-      <div><img src="img/nestle.png" alt="Hankook Logo"><br></div>
-      <div><img src="img/samsung.png" alt="Hankook Logo"><br></div>
+      <div><img src="img/dekabank.png" alt="Deka Logo"></div>
+      <div><img src="img/fraport.png" alt="Fraport Logo"><br></div>
+      <div><img src="img/loreal.png" alt="Loreal Logo"><br></div>
+      <div><img src="img/nestle.png" alt="Nestle Logo"><br></div>
+      <div><img src="img/samsung.png" alt="Samsung Logo"><br></div>
       <div><img src="img/hankook.png" alt="Hankook Logo"><br></div>
-      <div><img src="img/opel.png" alt="Hankook Logo"><br></div>
-      <div><img src="img/thomascook.png" alt="Hankook Logo"><br></div>
-      <div><img src="img/ezb.png" alt="Hankook Logo"><br></div>
-      <div><img src="img/zurich.png" alt="Hankook Logo"><br></div>
-      <div><img src="img/lottohessen.png" alt="Hankook Logo"><br></div>
-      <div><img src="img/Lufthansa_cargo.png" alt="Hankook Logo"><br></div>
+      <div><img src="img/opel.png" alt="Opel Logo"><br></div>
+      <div><img src="img/thomascook.png" alt="Thomas Cook Logo"><br></div>
+      <div><img src="img/ezb.png" alt="EZB Logo"><br></div>
+      <div><img src="img/zurich.png" alt="Zurich Versicherung Logo"><br></div>
+      <div><img src="img/lottohessen.png" alt="Lotto Hessen Logo"><br></div>
+      <div><img src="img/Lufthansa_cargo.png" alt="Lufthansa Cargo Logo"><br></div>
     </div>
 
     <h4>Tools</h4>
     <div class="line_black"></div>
-    <p>Figma, Adobe Creative Cloud, Pen & Paper, Miro, Trello, Brain is braining 24/7</p>
+    <p>Figma, Adobe Creative Cloud, Pen & Paper, Miro, Trello. Mit Excel und PowerPoint kann man mich jagen. Brain is
+      braining 24/7</p>
 
     <h4>was ich sonst noch mag </h4>
     <div class="line_black"></div>
@@ -231,11 +89,13 @@
       <img src="img/about_2.png" alt="Mein Auto" width="300px">
       <img src="img/about_3.png" alt="Meinen alten Arbeitsplatz" width="300px">
       <img src="img/about_4.png" alt="Konzerte und Festivals" width="300px">
-      <img src="img/about_5.png" alt="Berge und Seen" width="300px">
+      <img src="img/about_5.png" alt="Am Wasser sein" width="300px">
       <img src="img/about_6.png" alt="Asiatisches Essen" width="300px">
     </div>
 
   </main>
+
+  <!-- Footer -->
   <footer>
     <h4>Let's connect</h4>
     <div class="line_black"></div>
