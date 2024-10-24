@@ -4,198 +4,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>dieHeide</title>
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    .topnav a {
-      float: left;
-      color: black;
-      text-align: center;
-      padding: 10px 50px 0px 0px;
-      text-decoration: none;
-      font-size: 16px;
-    }
-
-    .topnav a:hover {
-      text-decoration: underline;
-    }
-
-    .topnav a.split {
-      float: right;
-      color: black;
-    }
-
-    .header {
-      position: sticky;
-      top: 0;
-      background-color: white;
-      padding-bottom: 20px;
-    }
-
-    body {
-      font: 200 16px Noto Sans;
-      fallback: arial;
-      line-height: 1, 2;
-      color: black;
-      margin-right: 80px;
-      margin-left: 80px;
-      min-height: 100vh;
-      display: grid;
-      grid-template-rows: 1fr auto;
-    }
-
-    h1 {
-      font: 300;
-      font-style: italic;
-      font-size: 72px;
-      margin: 0;
-    }
-
-    h2 {
-      font: 300;
-      font-style: italic;
-      font-size: 40px;
-      margin: 0;
-    }
-
-    h3 {
-      font: 300;
-      font-style: italic;
-      font-size: 32px;
-      text-align: center;
-      margin-bottom: 0;
-    }
-
-    h4 {
-      font-size: 24px;
-      text-transform: uppercase;
-      margin-bottom: 10px;
-    }
-
-    h5 {
-      font: 500;
-      font-style: italic;
-      font-size: 24px;
-      margin: 0;
-    }
-
-    .line_black {
-      padding: 3px;
-      background: black;
-      width: 60px;
-      margin-bottom: 20px;
-    }
-
-    .line_white {
-      padding: 3px;
-      background: white;
-      width: 60px;
-      margin-bottom: 40px;
-    }
-
-    .links {
-      text-decoration: underline;
-      text-decoration-thickness: 5%;
-      color: black;
-    }
-
-    .links_menu {
-      color: black;
-    }
-
-    .bild {
-      width: 100%;
-      height: auto;
-      margin-bottom: 10px;
-    }
-
-    .text_in_box {
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-top: 10px;
-      color: white;
-      background-color: black;
-    }
-
-    .footer {
-      display: flex;
-      font-size: 16px;
-      width: fit-content;
-    }
-
-    .footer div {
-      margin-right: 40px;
-      width: 100%;
-    }
-
-    @media screen and (max-width: 600px) {
-
-      body {
-        font: 200 14px Noto Sans;
-        fallback: arial;
-        margin-right: 40px;
-        margin-left: 40px;
-        color: black;
-      }
-
-      .footer {
-        display: block;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <title>dieHeide</title>
 </head>
 
 <body>
 
+  <!-- Navigation -->
   <header class="header">
-    <nav>
-      <div class="topnav">
-        <a href="index.html" style="text-decoration: none;"><strong>dieHeide</strong></a>
-        <a href="contact.html" class="split">contact</a>
-        <a href="work.html" class="split" style="text-decoration: underline;">work</a>
-        <a href="about.html" class="split">about</a>
+    <nav class="nav">
+      <div class="logo">
+        <a href="index.html"><img src="img/Logo_BSS.svg" alt="Logo Bunnysecretservice" class="logo-img"></a>
       </div>
+      <ul class="nav-links">
+        <li><a href="about.html">about</a></li>
+        <li class="active-page"><a href="work.html">work</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
     </nav>
   </header>
 
+  <!-- Content -->
   <main>
-    <img src="img/work_header.png" alt="Bild" class="bild">
+    <img src="img/work_header.png" alt="Bild von Zettel mit der Beschriftung Liebe für Heide" class="bild">
     <hr>
-
     <h4>Case Study: Website – Konzeption, Design, Prototyping</h4>
     <div class="line_black"></div>
-    <img src="img/work_1.png" alt="Bild" class="bild"><br>
-    <p>Hier wird kurz erklärt, was für ein Projekt das hier ist, was ich alles gemacht habe und dann gibt es noch
-      einen Textlink, der vielleicht animiert ist, der zur Unterseite führt.</p><br>
+    <img src="img/work_1.png" alt="Bild von Website auf dem Laptopscreen" class="bild"><br>
+    <p>In dieser Case Study wurde eine <strong>Website für ein Urlaubsresort </strong>entwickelt, das sich an Familien
+      mit gut verdienenden Eltern (30–60 Jahre) und Kindern bis 12 Jahren richtet. Der Fokus liegt auf der Erholung der
+      Eltern, die dank vielfältiger Angebote und Kinderbetreuung völlig entspannen können.
+      <br><br>Die Website zielt darauf ab, Erwachsenen Exklusivität zu vermitteln, während die kinderfreundlichen
+      Angebote mit spielerischen Elementen präsentiert werden. Ein Hauptziel war die <strong>"Mobile
+        First"-Umsetzung,</strong> um den
+      <strong>Buchungsprozess und Kontaktmöglichkeiten</strong>schnell und intuitiv zu gestalten.
+    </p><br>
 
     <h4>Case Study: Mobile App – Konzeption, Design, Prototyping</h4>
     <div class="line_black"></div>
-    <img src="img/work_2.png" alt="Bild" class="bild"><br>
-    <p>Hier wird kurz erklärt, was für ein Projekt das hier ist, was ich alles gemacht habe und dann gibt es noch
-      einen Textlink, der vielleicht animiert ist, der zur Unterseite führt.</p><br>
+    <img src="img/work_2.png" alt="Übersicht von App Design Projekt" class="bild"><br>
+    <p>Die App „Earth Savers“ ist eine <strong>vegane Community-App, </strong> die Einsteiger motiviert, ihre
+      Ernährungsgewohnheiten zu ändern, und erfahrene Veganer inspiriert. Sie bietet drei Kernfunktionen:
+      <br><br><strong>Vegane Rezeptvorschläge</strong> basierend auf vorhandenen Lebensmitteln im Kühlschrank, die
+      <strong>Anzeige der täglichen Auswirkungen </strong> der Gewohnheiten, sowohl individuell als auch als Teil der
+      Community, mit der Möglichkeit, Coins zu sammeln und den <strong>Austausch in der Community,</strong> um
+      Veränderungen im eigenen Handeln und der Umwelt zu fördern.
+    </p><br>
 
     <h4>Editorial Design</h4>
     <div class="line_black"></div>
-    <img src="img/work_3.png" alt="Bild" class="bild"><br>
-    <p>Hier wird kurz erklärt, was für ein Projekt das hier ist, was ich alles gemacht habe und dann gibt es noch
-      einen Textlink, der vielleicht animiert ist, der zur Unterseite führt.</p><br>
+    <img src="img/work_3.png" alt="Bild von Broschüre von Stahlwerk" class="bild"><br>
+    <p>Im Bereich Editorial Design habe ich vielfältige Erfahrungen gesammelt, darunter die <strong>Planung und
+        Betreuung verschiedener
+        Fotoshootings</strong> wie beispielsweise für ein Stahlwerk in Rumänien sowie die anschließende Gestaltung der
+      dazugehörigen <strong>Broschüren und Anzeigen.</strong>
+      <br><br>Darüber hinaus war ich verantwortlich für die Gestaltung von <strong>Flyern, Plakaten und
+        Programmheften</strong> für das Lufthansa
+      Orchester, <strong>Anzeigen und POS-Material</strong> für Samsung sowie für die Erstellung von
+      <strong>Reisebroschüren</strong> für Thomas Cook.
+    </p><br>
 
     <h4>Case Study: Software – Konzeption & Design</h4>
     <div class="line_black"></div>
-    <img src="img/work_4.png" alt="Bild" class="bild"><br>
-    <p>Hier wird kurz erklärt, was für ein Projekt das hier ist, was ich alles gemacht habe und dann gibt es
-      noch einen Textlink, der vielleicht animiert ist, der zur Unterseite führt.</p><br>
+    <img src="img/work_4.png" alt="Bild von Software in Screen" class="bild"><br>
+    <p>Für einen Automobilhersteller wurde eine <strong>Fuhrparkverwaltungssoftware</strong> konzipiert und gestaltet,
+      um das Ausleihen
+      von Testfahrzeugen und die Dokumentation von Qualitätsmängeln effizient zu ermöglichen. Die Software bietet eine
+      Übersicht über die Fahrzeugverfügbarkeit, ermöglicht Reservierungen und die Erfassung von Mängeln mit Foto-Upload
+      nach Testfahrten. Eine <strong>Stakeholder-Analyse, User Flow und Personas</strong> bildeten die Grundlage für die
+      Entwicklung.
+
+      <br><br>Das Design ist klar und benutzerfreundlich, mit harmonierenden Farben und einer modernen Typografie, die
+      <strong>sowohl
+        auf Tablets als auch Desktops </strong> optimale Bedienbarkeit sicherstellt. Um die User Experience weiter zu
+      verbessern,
+      sind Experten-Reviews und Usability-Tests geplant.
+    </p><br>
 
   </main>
+
+  <!-- Footer -->
   <footer>
     <h4>Let's connect</h4>
     <div class="line_black"></div>
