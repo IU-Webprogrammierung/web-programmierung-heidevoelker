@@ -4,187 +4,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>dieHeide</title>
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    .topnav a {
-      float: left;
-      color: black;
-      text-align: center;
-      padding: 10px 50px 0px 0px;
-      text-decoration: none;
-      font-size: 16px;
-    }
-
-    .topnav a:hover {
-      text-decoration: underline;
-    }
-
-    .topnav a.split {
-      float: right;
-      color: black;
-    }
-
-    .header {
-      position: sticky;
-      top: 0;
-      background-color: white;
-      padding-bottom: 20px;
-    }
-
-    body {
-      font: 200 16px Noto Sans;
-      fallback: arial;
-      line-height: 1, 2;
-      color: black;
-      margin-right: 80px;
-      margin-left: 80px;
-      min-height: 100vh;
-      display: grid;
-      grid-template-rows: 1fr auto;
-    }
-
-    h1 {
-      font: 300;
-      font-style: italic;
-      font-size: 72px;
-      margin: 0;
-    }
-
-    h2 {
-      font-style: italic;
-      font-size: 40px;
-      margin-bottom: 10px;
-    }
-
-    h3 {
-      font: 300;
-      font-style: italic;
-      font-size: 32px;
-      text-align: center;
-      margin-bottom: 0;
-    }
-
-    h4 {
-      font-size: 24px;
-      text-transform: uppercase;
-      margin-bottom: 10px;
-    }
-
-    h5 {
-      font: 500;
-      font-style: italic;
-      font-size: 24px;
-      margin: 0;
-    }
-
-    .line_black {
-      padding: 3px;
-      background: black;
-      width: 60px;
-      margin-bottom: 20px;
-    }
-
-    .line_white {
-      padding: 3px;
-      background: white;
-      width: 60px;
-      margin-bottom: 20px;
-    }
-
-    .links {
-      text-decoration: underline;
-      text-decoration-thickness: 5%;
-      color: black;
-    }
-
-    .links_menu {
-      color: black;
-    }
-
-    .bild {
-      width: 100%;
-      height: auto;
-      margin-bottom: 10px;
-    }
-
-    .text_in_box {
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-top: 10px;
-      margin-top: 20px;
-      color: white;
-      background-color: black;
-    }
-
-    .footer {
-      display: flex;
-      font-size: 16px;
-      width: fit-content;
-    }
-
-    .footer div {
-      margin-right: 40px;
-      width: 100%;
-    }
-
-    @media screen and (max-width: 600px) {
-
-      body {
-        font: 200 14px Noto Sans;
-        fallback: arial;
-        margin-right: 40px;
-        margin-left: 40px;
-        color: black;
-      }
-
-      .footer {
-        display: block;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <title>dieHeide</title>
 </head>
 
 <body>
 
+  <!-- Navigation -->
   <header class="header">
-    <nav>
-      <div class="topnav">
-        <a href="index.html" style="text-decoration: none;"><strong>dieHeide</strong></a>
-        <a href="contact.html" class="split">contact</a>
-        <a href="work.html" class="split">work</a>
-        <a href="about.html" class="split">about</a>
+    <nav class="nav">
+      <div class="logo">
+        <a href="index.html"><img src="img/Logo_BSS.svg" alt="Logo" class="logo-img"></a>
       </div>
+      <ul class="nav-links">
+        <li><a href="about.html">about</a></li>
+        <li><a href="work.html">work</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
     </nav>
   </header>
 
+  <!-- Content -->
   <main>
-    <img src="img/start_header.png" alt="Bild" class="bild">
+    <img src="img/start_header.png" alt="Bild von dickem Notizbuch" class="bild">
     <hr>
     <div><a href="about.html" style="text-decoration: none;">
         <div class="text_in_box">
           <h4>about</h4>
           <div class="line_white"></div>
-          <p>UI/UX Design, Konzeption, Webdesign, Mobile App Design, Editorial Design, Corporate Design, Prototyping</p>
-          <p>Define, Research, Ideation, Sketching, Moodboards, Prototyping, Testing, Design Improvements</p><br>
+          <p>Ich bin die Heide, <strong>User Experience Designerin</strong> mit viiielen Jahren Berufserfahrung im
+            Printbereich, der klassischen Werbung (vor allem Kampagnenentwicklung) und im Online Marketing.</p>
+          <p><strong>Meine Leidenschaft:</strong> UI/UX Design, Konzeption, Webdesign, Mobile App Design, Editorial
+            Design, Corporate Design, Prototyping. Zur Zeit beschäftige ich mich verstärkt mit dem Thema Accessibility.
+          </p>
+          <p><strong>Meine Vorgehensweise:</strong> Prozess planen und Nutzungskontext festlegen, User Research,
+            Anforderungen spezifizieren, Sketching und Moodboards, Prototyping, testen und optimieren</p><br>
         </div>
       </a>
     </div>
 
     <h3><q>Sie ist ganz okay!</q></h3>
-    <p style="text-align: center;">(Zitat von meinem Brudi)</p>
-    <a href="work.html"><img src="img/start_work.png" alt="Bild" class="bild"></a>
+    <p style="text-align: center;">(Zitat von meinem Arbeitsehemann)</p>
+    <a href="work.html"><img src="img/start_work.png"
+        alt="Bild, auf dem ich mit meinem Laptop in einem Stahlwerk auf dem Boden sitze" class="bild"></a>
   </main>
 
+  <!-- Footer -->
   <footer>
     <h4>Let's connect</h4>
     <div class="line_black"></div>
