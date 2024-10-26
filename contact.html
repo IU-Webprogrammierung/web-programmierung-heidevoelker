@@ -7,7 +7,8 @@
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>dieHeide</title>
 </head>
@@ -36,15 +37,15 @@
     <p>Heide Völker<br>Konzeption, Art Direction, UX Design</p>
     <br>
 
-    <form action="/action_page.php" class="responsive-form">
+    <form action="action_page.php" class="responsive-form">
       <h4>Liebesbrief hier schreiben</h4>
       <div class="line_black"></div>
       <label>Name</label><br>
-      <input required type="text" id="fname"><br><br>
+      <input required type="text" id="fname" name="fname"><br><br>
       <label>E-Mail-Adresse</label><br>
-      <input required type="email" id="mail"><br><br>
+      <input required type="email" id="mail" name="email"><br><br>
       <label>Nachricht</label><br>
-      <textarea required rows="4" id="msg"></textarea>
+      <textarea required rows="4" id="msg" name="message"></textarea>
       <br><br>
       <input type="submit" value="Abschicken" class="button">
     </form>
@@ -62,10 +63,22 @@
         <a href="https://www.behance.net/heidevlker" target="_blank" class="links">behance</a><br>
         <a href="https://www.instagram.com/bunnysecretservice/" target="_blank" class="links">instagram</a>
       </div><br>
-      <div><a href="impressum.html" class="links">Impressum</a><br><a href="datenschutz.html" class="links">Datenschutz</a></div><br>
-      <div><strong>Back to top</strong></div>
+      <div><a href="impressum.html" class="links">Impressum</a><br><a href="datenschutz.html"
+          class="links">Datenschutz</a></div><br>
+      <div> <a href="#" class="back-to-top" onclick="scrollToTop()"><strong>Back to top</strong></a>
+      </div>
     </div>
   </footer>
+
+  <script>
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+
 </body>
 
 </html>
