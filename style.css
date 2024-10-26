@@ -15,8 +15,7 @@ body {
 
 header {
   background-color: #fff;
-  padding: 10px;
-  padding-bottom: 10px;
+  padding: 20px;
   position: sticky;
   top: 0;
 }
@@ -31,11 +30,11 @@ header {
   text-decoration: underline;
   text-underline-offset: 2px;
   text-decoration-thickness: 5%;
-  color: #000000;
+  color: #00bf49;
 }
 
 .logo-img {
-  height: 60px;
+  height: 20px;
 }
 
 .nav-links {
@@ -60,7 +59,7 @@ header {
   text-decoration: underline;
   text-underline-offset: 2px;
   text-decoration-thickness: 5%;
-  color: #b8abab;
+  color: #00bf49;
 }
 
 h1 {
@@ -115,7 +114,7 @@ h5 {
   text-decoration: underline;
   text-decoration-thickness: 5%;
   text-underline-offset: 2px;
-  color: black;
+  color: #000000;
 }
 
 .bild {
@@ -131,7 +130,7 @@ h5 {
 
 .button {
   background-color: #b8abab;
-  border-color: #b8abab;
+  border-color:#00bf49;
   color: black;
   border-radius: 2px;
   height: 40px;
@@ -184,7 +183,7 @@ img.bild {
 .responsive-form input[type="submit"] {
   width: 100%;
   padding: 10px;
-  background-color: #b8abab;
+  background-color: #00bf49;
   color: white;
   border: none;
   cursor: pointer;
