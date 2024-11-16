@@ -7,20 +7,19 @@
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="js/scroll.js" defer></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/mouseeffect.js"></script>
   <title>dieHeide</title>
 </head>
 
 <body>
 
   <!-- Navigation -->
-  <header class="header">
+  <header>
     <nav class="nav">
-      <div class="logo">
-        <a href="index.html"><img src="img/Logo_BSS.svg" alt="die Heide als Logo" class="logo-img"></a>
-      </div>
+      <a href="index.html"><img src="img/Logo_BSS.svg" alt="die Heide als Logo" class="logo-img"></a>
       <ul class="nav-links">
         <li><a href="about.html">about</a></li>
         <li><a href="work.html">work</a></li>
@@ -31,9 +30,13 @@
 
   <!-- Content -->
   <main>
-    <img src="img/start_header.png" alt="Bild von dickem Notizbuch" class="bild">
+
+    <div><img src="img/start_header.png" alt="Bild von dickem Notizbuch" class="header-image">
+      <div class="cursor-circle"></div>
+    </div>
+
     <hr>
-    <div><a href="about.html" style="text-decoration: none;">
+    <div><a href="about.html">
         <div class="text_in_box">
           <h4>about</h4>
           <div class="line_white"></div>
@@ -49,7 +52,7 @@
     </div>
 
     <h3><q>Sie ist ganz okay!</q></h3>
-    <p style="text-align: center;">(Zitat von meinem Arbeitsehemann)</p>
+    <p class="zitat-unterschrift">(Zitat von meinem Arbeitsehemann)</p>
     <a href="work.html"><img src="img/start_work.png"
         alt="Bild, auf dem ich mit meinem Laptop in einem Stahlwerk auf dem Boden sitze" class="bild"></a>
   </main>
@@ -68,19 +71,10 @@
       </div><br>
       <div><a href="impressum.html" class="links">Impressum</a><br><a href="datenschutz.html"
           class="links">Datenschutz</a></div><br>
-      <div> <a href="#" class="back-to-top" onclick="scrollToTop()"><strong>Back to top</strong></a>
+      <div> <a href="#" class="back-to-top">Back to top</a>
       </div>
     </div>
   </footer>
-
-  <script>
-    function scrollToTop() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    }
-</script>
 
 </body>
 
