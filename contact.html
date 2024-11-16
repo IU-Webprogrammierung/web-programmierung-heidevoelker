@@ -7,20 +7,19 @@
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="js/scroll.js" defer></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/mouseeffect.js"></script>
   <title>dieHeide</title>
 </head>
 
 <body>
 
   <!-- Navigation -->
-  <header class="header">
+  <header>
     <nav class="nav">
-      <div class="logo">
-        <a href="index.html"><img src="img/Logo_BSS.svg" alt="die Heide als Logo" class="logo-img"></a>
-      </div>
+      <a href="index.html"><img src="img/Logo_BSS.svg" alt="die Heide als Logo" class="logo-img"></a>
       <ul class="nav-links">
         <li><a href="about.html">about</a></li>
         <li><a href="work.html">work</a></li>
@@ -31,13 +30,18 @@
 
   <!-- Content -->
   <main>
-    <img src="img/contact_header.png" alt="Bild von mir als Kind an einer Schreibmaschine" class="bild">
+    <div><img src="img/contact_header.png" alt="Bild von mir als Kind an einer Schreibmaschine" class="header-image">
+      <div class="cursor-circle"></div>
+    </div>
     <hr>
-    <div><img src="img/me.jpg" alt="Profilbild" class="bild_contact"></div>
+    <div class="flex-center">
+      <img src="img/me.jpg" alt="Profilbild" class="bild_contact">
+      <div><img src="img/hasen00013.gif" alt="Hier hoppelt ein Hase" class="gif_hase"></div>
+    </div>
+
     <p>Heide Völker<br>Konzeption, Art Direction, UX Design</p>
     <br>
-
-    <form action="action_page.php" class="responsive-form">
+    <form action="php/action_page.php" class="responsive-form">
       <h4>Liebesbrief hier schreiben</h4>
       <div class="line_black"></div>
       <label>Name</label><br>
@@ -47,7 +51,7 @@
       <label>Nachricht</label><br>
       <textarea required rows="4" id="msg" name="message"></textarea>
       <br><br>
-      <input type="submit" value="Abschicken" class="button">
+      <input type="submit" value="Hier klicken, um Fehlermeldung zu sehen" class="button">
     </form>
   </main>
 
@@ -65,20 +69,10 @@
       </div><br>
       <div><a href="impressum.html" class="links">Impressum</a><br><a href="datenschutz.html"
           class="links">Datenschutz</a></div><br>
-      <div> <a href="#" class="back-to-top" onclick="scrollToTop()"><strong>Back to top</strong></a>
+      <div> <a href="#" class="back-to-top">Back to top</a>
       </div>
     </div>
   </footer>
-
-  <script>
-    function scrollToTop() {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    }
-  </script>
-
 </body>
 
 </html>
