@@ -7,20 +7,19 @@
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="js/scroll.js" defer></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/mouseeffect.js"></script>
   <title>dieHeide</title>
 </head>
 
 <body>
 
   <!-- Navigation -->
-  <header class="header">
+  <header>
     <nav class="nav">
-      <div class="logo">
-        <a href="index.html"><img src="img/Logo_BSS.svg" alt="die Heide als Logo" class="logo-img"></a>
-      </div>
+      <a href="index.html"><img src="img/Logo_BSS.svg" alt="die Heide als Logo" class="logo-img"></a>
       <ul class="nav-links">
         <li><a href="about.html">about</a></li>
         <li class="active-page"><a href="work.html">work</a></li>
@@ -31,19 +30,22 @@
 
   <!-- Content -->
   <main>
-    <img src="img/work_header.png" alt="Bild von Zettel mit der Beschriftung Liebe für Heide" class="bild">
+    <div><img src="img/work_header.png" alt="Bild von Zettel mit der Beschriftung Liebe für Heide" class="header-image">
+      <div class="cursor-circle"></div>
+    </div>
     <hr>
     <h4>Case Study: Website – Konzeption, Design, Prototyping</h4>
     <div class="line_black"></div>
     <img src="img/work_1.png" alt="Bild von Website auf dem Laptopscreen" class="bild"><br>
     <p>In dieser Case Study wurde eine <strong>Website für ein Urlaubsresort </strong>entwickelt, das sich an Familien
       mit gut verdienenden Eltern und Kindern bis 12 Jahren richtet. Der Fokus liegt auf der Erholung der
-      Eltern, die dank vielfältiger Angebote und Kinderbetreuung völlig entspannen können.
-      <br><br>Die Website zielt darauf ab, Erwachsenen Exklusivität zu vermitteln, während die kinderfreundlichen
+      Eltern, die dank vielfältiger Angebote und Kinderbetreuung völlig entspannen können.</p>
+
+    <p>Die Website zielt darauf ab, Erwachsenen Exklusivität zu vermitteln, während die kinderfreundlichen
       Angebote mit spielerischen Elementen präsentiert werden. Ein Hauptziel war die <strong>"Mobile
         First"-Umsetzung,</strong> um den
       <strong>Buchungsprozess und Kontaktmöglichkeiten </strong>schnell und intuitiv zu gestalten.
-    </p><br>
+    </p>
 
     <h4>Case Study: Mobile App – Konzeption, Design, Prototyping</h4>
     <div class="line_black"></div>
@@ -52,20 +54,19 @@
       Veganer inspiriert. Sie bietet vegane Rezeptvorschläge auf Basis vorhandener Lebensmittel, zeigt die täglichen
       Auswirkungen der Gewohnheiten und ermöglicht den Austausch in der Community. In diesem Projekt habe ich
       <strong>Konzeption, Design und Prototyping </strong>übernommen.
-    </p><br>
+    </p>
 
     <h4>Editorial Design</h4>
     <div class="line_black"></div>
     <img src="img/work_3.png" alt="Bild von Broschüre von Stahlwerk" class="bild"><br>
     <p>Im Bereich Editorial Design hatte ich einige Projekte, darunter die <strong>Planung und
         Betreuung verschiedener Fotoshootings</strong> wie beispielsweise für ein Stahlwerk in Rumänien sowie die
-      anschließende Gestaltung der
-      dazugehörigen <strong>Broschüren und Anzeigen.</strong>
-      <br><br>Darüber hinaus war ich verantwortlich für die Gestaltung von <strong>Flyern, Plakaten und
-        Programmheften</strong> für das Lufthansa
-      Orchester, <strong>Anzeigen und POS-Material</strong> für Samsung sowie für die Erstellung von
-      <strong>Reisekatalogen</strong> für Thomas Cook.
-    </p><br>
+      anschließende Gestaltung der dazugehörigen <strong>Broschüren und Anzeigen.</strong></p>
+
+    <p>Außerdem war ich verantwortlich für die Gestaltung von <strong>Flyern, Plakaten und
+        Programmheften</strong> für das Lufthansa Orchester, <strong>Anzeigen und POS-Material</strong> für Samsung
+      sowie für die Erstellung von<strong>Reisekatalogen</strong> für Thomas Cook.
+    </p>
 
     <h4>Case Study: Software – Konzeption & Design</h4>
     <div class="line_black"></div>
@@ -75,14 +76,12 @@
       von Testfahrzeugen und die Dokumentation von Qualitätsmängeln effizient zu ermöglichen. Die Software bietet eine
       Übersicht über die Fahrzeugverfügbarkeit, ermöglicht Reservierungen und die Erfassung von Mängeln mit Foto-Upload
       nach Testfahrten. Eine <strong>Stakeholder-Analyse, User Flow und Personas</strong> bildeten die Grundlage für die
-      Entwicklung.
+      Entwicklung.</p>
 
-      <br><br>Das Design ist klar und benutzerfreundlich, mit harmonierenden Farben und einer modernen Typografie, die
-      <strong>sowohl
-        auf Tablets als auch Desktops </strong> optimale Bedienbarkeit sicherstellt. Um die User Experience weiter zu
-      verbessern,
-      sind Experten-Reviews und Usability-Tests geplant.
-    </p><br>
+    <p>Das Design ist klar und benutzerfreundlich, mit harmonierenden Farben und einer modernen Typografie, die
+      <strong>sowohl auf Tablets als auch Desktops </strong> optimale Bedienbarkeit sicherstellt. Um die User Experience
+      weiter zu verbessern, sind Experten-Reviews und Usability-Tests geplant.
+    </p>
 
   </main>
 
@@ -100,19 +99,10 @@
       </div><br>
       <div><a href="impressum.html" class="links">Impressum</a><br><a href="datenschutz.html"
           class="links">Datenschutz</a></div><br>
-      <div> <a href="#" class="back-to-top" onclick="scrollToTop()"><strong>Back to top</strong></a>
+      <div> <a href="#" class="back-to-top">Back to top</a>
       </div>
     </div>
   </footer>
-
-  <script>
-    function scrollToTop() {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    }
-  </script>
 
 </body>
 
