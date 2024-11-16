@@ -7,20 +7,19 @@
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="js/scroll.js" defer></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/mouseeffect.js"></script>
   <title>dieHeide</title>
 </head>
 
 <body>
 
   <!-- Navigation -->
-  <header class="header">
+  <header>
     <nav class="nav">
-      <div class="logo">
-        <a href="index.html"><img src="img/Logo_BSS.svg" alt="die Heide als Logo" class="logo-img"></a>
-      </div>
+      <a href="index.html"><img src="img/Logo_BSS.svg" alt="die Heide als Logo" class="logo-img"></a>
       <ul class="nav-links">
         <li class="active-page"><a href="about.html">about</a></li>
         <li><a href="work.html">work</a></li>
@@ -31,7 +30,9 @@
 
   <!-- Content -->
   <main>
-    <img src="img/about_header.png" alt="Bild von mir bei einem Lachanfall" class="bild">
+    <div><img src="img/about_header.png" alt="Bild von mir bei einem Lachanfall" class="header-image">
+      <div class="cursor-circle"></div>
+    </div>
     <hr>
     <h4>Wer ich bin und außerdem wieviele</h4>
     <div class="line_black"></div>
@@ -41,21 +42,19 @@
     <p>Geboren 1981 in Frechen / Köln (Sternzeichen Widder, falls das jemand wissen möchte). Mit 13 bin ich nach
       Frankfurt
       gezogen, natürlich nicht freiwillig, wer zieht schon freiwillig aus Köln weg, aber mittlerweile bin ich ein
-      richtiges Frankfurt-City-Girl und liebe liebe liebe diese Stadt!</p>
+      richtiges <strong> Frankfurt-City-Girl </strong>und liebe liebe liebe diese Stadt genauso wie den <strong> Kölner Karneval!</strong></p>
 
-    <strong>Ausbildung:</strong><br>
-    &#183; Mediengestalterin bei Schaufler Group GmbH Frankfurt<br>
-    &#183; Studium UX Design (B.A.)<br><br>
-    <strong>Berufserfahrung:</strong> <br>
-    &#183; Bildbearbeiterin bei Mundocom / Publicis Frankfurt<br>
-    &#183; Junior Art Director bei Cheil Germany<br>
-    &#183; Freelance Art Director & Lufthansa Flugbegleiterin<br>
-    &#183; aktuell UX Challenger bei rabbit eMarketing Frankfurt<br>
+    <p>Meine Ausbildung hab ich gemacht als<strong> Mediengestalterin </strong>bei Schaufler Group GmbH Frankfurt und
+      dann war da noch ein <strong> UX Design (B.A.) </strong> Studium.</p>
+    Berufserfahrung hab ich als <strong> Bildbearbeiterin bei Mundocom / Publicis Frankfurt</strong>, dann war ich ein
+    paar Jahre <strong> Junior Art Director bei Cheil Germany</strong>, hab mein Leben als <strong> Freelance Art Director & Lufthansa
+    Flugbegleiterin </strong>gelebt und aktuell als <strong> UX Challenger bei rabbit eMarketing </strong>Frankfurt.
     </p>
 
     <h4>Expertise</h4>
     <div class="line_black"></div>
-    <p>Design & Strategie, Corporate Identity, Kampagnenentwicklung, Online Marketing, Designkonzeption, Art Direction</p>
+    <p>Design & Strategie, Corporate Identity, Kampagnenentwicklung, Online Marketing, Designkonzeption, Art Direction
+    </p>
 
     <h4>Brand Expertise</h4>
     <div class="line_black"></div>
@@ -80,17 +79,32 @@
     <p>Figma, Adobe Creative Cloud, Pen & Paper, Miro, Trello. Mit Excel und PowerPoint kann man mich jagen. Brain is
       braining 24/7</p>
 
-    <h4>was ich sonst noch mag </h4>
+    <!-- Bootstrap Slider -->
+    <h4>Was ich sonst noch mag</h4>
     <div class="line_black"></div>
 
-    <div>
-      <img src="img/about_1.png" alt="Den Blick aus meinem Fitnessstudio" width="300px">
-      <img src="img/about_2.png" alt="Mein Auto" width="300px">
-      <img src="img/about_3.png" alt="Meinen alten Arbeitsplatz" width="300px">
-      <img src="img/about_4.png" alt="Konzerte und Festivals" width="300px">
-      <img src="img/about_5.png" alt="Am Wasser sein" width="300px">
-      <img src="img/about_6.png" alt="Asiatisches Essen" width="300px">
-    </div>
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/about_1.png" class="d-block w-100" alt="Den Blick aus meinem Fitti">
+        </div>
+        <div class="carousel-item">
+          <img src="img/about_2.png" class="d-block w-100" alt="Mein Auto">
+        </div>
+        <div class="carousel-item">
+          <img src="img/about_3.png" class="d-block w-100" alt="Meinen alten Arbeitsplatz">
+        </div>
+        <div class="carousel-item">
+          <img src="img/about_4.png" class="d-block w-100" alt="Konzerte und Festivals">
+        </div>
+        <div class="carousel-item">
+          <img src="img/about_5.png" class="d-block w-100" alt="Wasser und Berge">
+        </div>
+        <div class="carousel-item">
+          <img src="img/about_6.png" class="d-block w-100" alt="Asiatisches Essen">
+        </div>
+      </div>
+
 
   </main>
 
@@ -106,20 +120,12 @@
         <a href="https://www.behance.net/heidevlker" target="_blank" class="links">behance</a><br>
         <a href="https://www.instagram.com/bunnysecretservice/" target="_blank" class="links">instagram</a>
       </div><br>
-      <div><a href="impressum.html" class="links">Impressum</a><br><a href="datenschutz.html" class="links">Datenschutz</a></div><br>
-      <div> <a href="#" class="back-to-top" onclick="scrollToTop()"><strong>Back to top</strong></a>
+      <div><a href="impressum.html" class="links">Impressum</a><br><a href="datenschutz.html"
+          class="links">Datenschutz</a></div><br>
+      <div> <a href="#" class="back-to-top">Back to top</a>
       </div>
     </div>
   </footer>
-
-  <script>
-    function scrollToTop() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    }
-</script>
 
 </body>
 
