@@ -26,6 +26,7 @@ hr {
   margin-bottom: 10px;
 }
 
+
 /* Navigation */
 
 header {
@@ -47,12 +48,13 @@ header {
   font-weight: 400;
   text-underline-offset: 2px;
   text-decoration-thickness: 5%;
-  color: #59A52C;
+  color: #002ab2;
 }
 
 .logo-img {
   height: 24px;
 }
+
 
 .nav-links {
   list-style: none;
@@ -76,7 +78,7 @@ header {
   text-decoration: underline;
   text-underline-offset: 2px;
   text-decoration-thickness: 5%;
-  color: #59A52C;
+  color: #002ab2;
 }
 
 /* Kreis, der dem Cursor folgt */
@@ -136,6 +138,11 @@ h4 {
   /* Headlines mit Linie drunter */
 }
 
+hr {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
 .line_black {
   padding: 3px;
   background: black;
@@ -156,7 +163,8 @@ p.zitat-unterschrift {
 
 .text_in_box {
   padding: 50px 50px;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   color: white;
   background-color: black;
 }
@@ -178,23 +186,7 @@ a[href="about.html"] {
   text-decoration: underline;
   text-underline-offset: 2px;
   text-decoration-thickness: 3%;
-  color: #59A52C;
-}
-
-/* Buttons */
-
-.button {
-  background-color: #b8abab;
-  border-color: #59A52C;
-  color: black;
-  border-radius: 2px;
-  height: 40px;
-  width: 100px;
-}
-
-.button:hover {
-  background-color: black;
-  color: white;
+  color: #002ab2;
 }
 
 /* Logos und Bilder */
@@ -214,6 +206,12 @@ a[href="about.html"] {
   background-size: cover;
   position: relative;
   /* Für die Positionierung von .cursor-circle */
+}
+
+img.bild {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
 }
 
 /* Karussell */
@@ -241,6 +239,131 @@ a[href="about.html"] {
 
 /* Kontaktseite */
 
+.gif_hase {
+  margin-left: 350px;
+  position: relative;
+  top: 20px;
+  width: 15%;
+  height: auto;
+}
+
+/* Form-Container */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Responsives Formular */
+.responsive-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+}
+
+.responsive-form input[type="text"],
+.responsive-form input[type="email"],
+.responsive-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.responsive-form textarea {
+  min-height: 100px;
+}
+
+.responsive-form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #002ab2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.responsive-form input[type="submit"]:hover {
+  background-color: #000000;
+}
+
+/* Buttons */
+.button {
+  background-color: #002ab2;
+  color: white;
+  border-radius: 4px;
+  padding: 10px 20px;
+  min-width: 120px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  margin: 5px auto;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Audio-Container */
+.audio-container {
+  text-align: center;
+  margin: 10px auto;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 400px;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #000000;
+  }
+
+  50% {
+    background-color: #002ab2;
+  }
+
+  100% {
+    background-color: #000000;
+  }
+
+  /* Pulsierende Animation für #playAudioButton */
+}
+
+#playAudioButton {
+  background-color: #002ab2;
+  color: white;
+  border: 1px solid #002ab2;
+  padding: 10px 20px;
+  min-width: 300px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+  /* Animation aktivieren */
+  transition: color 0.3s ease, border-color 0.3s ease;
+  /* Glatter Hover-Effekt */
+}
+
+#playAudioButton:hover {
+  color: black;
+  background-color: #ffffff;
+  border-color: #002ab2;
+  animation: none;
+}
+
+/* Hintergrund Datenschutzseite und Impressum */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -251,60 +374,13 @@ a[href="about.html"] {
   }
 }
 
-.flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.bild_contact {
-  margin: 10px 30px 10px 0;
-  height: 200px;
+.datenschutz .background-circle,
+.impressum .background-circle {
+  position: fixed;
+  top: 200px;
+  left: 200px;
+  z-index: -1;
   animation: fadeIn 2s ease-out;
-}
-
-.gif_hase {
-  margin-left: 50px;
-  position: relative;
-  top: 80px;
-  width: 80px;
-  height: auto;
-}
-
-img.bild {
-  width: 100%;
-  height: auto;
-}
-
-.responsive-form {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 10px;
-  float: left;
-}
-
-.responsive-form input[type="text"],
-.responsive-form input[type="email"],
-.responsive-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0;
-  box-sizing: border-box;
-  font-size: 16px;
-}
-
-.responsive-form input[type="submit"] {
-  width: 100%;
-  padding: 10px;
-  background-color: #59A52C;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.responsive-form input[type="submit"]:hover {
-  background-color: #000000;
 }
 
 /* Footer */
@@ -331,8 +407,9 @@ img.bild {
   text-decoration: underline;
   text-underline-offset: 2px;
   text-decoration-thickness: 3%;
-  color: #59A52C;
+  color: #002ab2;
 }
+
 
 /* Breakpoint: Tablets */
 @media only screen and (max-width: 1040px) {
@@ -392,6 +469,17 @@ img.bild {
     margin-bottom: 0px;
   }
 
+  .gif_hase {
+    display: block;
+    position: absolute;
+    margin: 30px 0px 0px 30px;
+    top: 200;
+    left: 15;
+    width: 20%;
+    height: auto;
+    z-index: 100;
+  }
+
   .footer {
     display: block;
   }
@@ -443,9 +531,8 @@ img.bild {
 
   .gif_hase {
     display: block;
-    /* GIF sichtbar */
     position: absolute;
-    margin: 60px 0px 0px 40px;
+    margin: 70px 0px 0px 80px;
     top: 0;
     left: 0;
     width: 20%;
@@ -462,13 +549,18 @@ img.bild {
     /* Zentrierte Zitate */
   }
 
-  .footer {
-    display: block;
+  h4 {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    text-align: left;
+    /* Headlines mit Linie drunter */
   }
 
-  .bild_contact {
-    width: 100%;
-    height: auto;
+  .footer {
+    display: block;
   }
 
 }
