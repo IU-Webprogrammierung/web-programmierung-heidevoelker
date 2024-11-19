@@ -555,10 +555,10 @@ img.bild {
   }
 
   .responsive-form input[type="text"],
-.responsive-form input[type="email"],
-.responsive-form textarea {
-  margin: 0;
-}
+  .responsive-form input[type="email"],
+  .responsive-form textarea {
+    margin: 0;
+  }
 
   .button,
   .responsive-form input[type="submit"] {
