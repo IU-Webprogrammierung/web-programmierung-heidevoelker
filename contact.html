@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <script src="js/scroll.js" defer></script>
   <script src="js/jquery.min.js"></script>
@@ -33,24 +34,29 @@
     </div>
     <hr>
     <div class="flex-center">
-      <img src="img/me.jpg" alt="Profilbild" class="bild_contact">
       <div><img src="img/hasen00013.gif" alt="Hier hoppelt ein Hase" class="gif_hase"></div>
     </div>
-
-    <p><strong>Heide Völker</strong><br>Konzeption, Art Direction, UX Design</p>
     <br>
-    <form action="php/action_page.php" class="responsive-form">
-      <h4>Liebesbrief hier schreiben</h4>
-      <div class="line_black"></div>
-      <label>Name</label><br>
-      <input required type="text" id="fname" name="fname"><br><br>
-      <label>E-Mail-Adresse</label><br>
-      <input required type="email" id="mail" name="email"><br><br>
-      <label>Nachricht</label><br>
-      <textarea required rows="4" id="msg" name="message"></textarea>
-      <br><br>
-      <input type="submit" value="Hier klicken, um Fehlermeldung zu sehen" class="button">
-    </form>
+    <div class="form-container">
+      <form action="php/action_page.php" class="responsive-form">
+        <h4>Liebesbrief hier schreiben</h4>
+        <div class="line_black"></div>
+        <label>Name</label><br>
+        <input required type="text" id="fname" name="fname"><br><br>
+        <label>E-Mail-Adresse</label><br>
+        <input required type="email" id="mail" name="email"><br><br>
+        <label>Nachricht</label><br>
+        <textarea required rows="4" id="msg" name="message"></textarea>
+        <br><br>
+        <input type="submit" value="Hier klicken, um Fehlermeldung zu sehen" class="button">
+      </form>
+
+      <!-- Button zum Abspielen der Audiodatei -->
+      <div class="audio-container">
+        <button id="playAudioButton">Musik mach ich auch</button>
+        <audio id="audioPlayer" src="audio/June.mp3"></audio>
+      </div>
+    </div>
   </main>
 
   <!-- Footer -->
@@ -71,6 +77,9 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/musik.js"></script>
+
 </body>
 
 </html>
