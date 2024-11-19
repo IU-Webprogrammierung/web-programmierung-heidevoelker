@@ -345,14 +345,12 @@ img.bild {
   color: white;
   border: 1px solid #002ab2;
   padding: 10px 20px;
-  min-width: 300px;
+  min-width: 250px;
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
   animation: pulse 2s infinite;
-  /* Animation aktivieren */
   transition: color 0.3s ease, border-color 0.3s ease;
-  /* Glatter Hover-Effekt */
 }
 
 #playAudioButton:hover {
@@ -499,8 +497,8 @@ img.bild {
 
   body {
     font-size: 16px;
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
     color: black;
   }
 
@@ -530,14 +528,11 @@ img.bild {
   }
 
   .gif_hase {
-    display: block;
-    position: absolute;
-    margin: 70px 0px 0px 80px;
+    width: 20vw;
+    position: fixed;
     top: 0;
-    left: 0;
-    width: 20%;
-    height: auto;
-    z-index: 100;
+    left: 20%;
+    transform: translate(-50%, -50%);
   }
 
   h3 {
@@ -547,6 +542,36 @@ img.bild {
     text-align: center;
     margin-bottom: 0px;
     /* Zentrierte Zitate */
+  }
+
+  .form-container {
+    padding: 0px 10px 30px 10px;
+  }
+
+  .responsive-form {
+    padding: 0px;
+    margin-bottom: 0;
+  }
+
+  .responsive-form input[type="text"],
+.responsive-form input[type="email"],
+.responsive-form textarea {
+  margin: 0;
+}
+
+  .button,
+  .responsive-form input[type="submit"] {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+    margin: 0;
+  }
+
+  #playAudioButton {
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+    margin: 0;
   }
 
   h4 {
