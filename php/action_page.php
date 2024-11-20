@@ -11,9 +11,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "<p><strong>E-Mail-Adresse:</strong> $email</p>";
         echo "<p><strong>Nachricht:</strong> $message</p>";
     } else {
-        echo "<h2>Fehler: Bitte füllen Sie alle Felder aus.</h2>";
+        echo "<h2 style='color: red; font-family: Arial, sans-serif;'>Fehler: Bitte alle felder ausfüllen.</h2>";
     }
 } else {
-    echo "<h2>Danke für Deine Nachricht, die wird leider nicht ankommen, weil ich noch nicht rausgefunden habe, wie man Formulare so programmiert, dass sie funktionieren. Schick mir doch einfach eine Mail!</h2>";
+    echo "<div style='padding: 30px;'>";
+    echo "<h2 style='color: black; font-family: Arial, sans-serif;'>Danke für Deine Nachricht! Leider wird sie bei mir nicht ankommen, weil ich noch dabei bin, das Mysterium der funktionierenden Formulare zu entschlüsseln. Schick mir einfach eine Mail – die weiß, wo sie hin muss!</h2>";
 }
 ?>
