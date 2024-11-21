@@ -26,7 +26,6 @@ hr {
   margin-bottom: 10px;
 }
 
-
 /* Navigation */
 
 header {
@@ -48,13 +47,12 @@ header {
   font-weight: 400;
   text-underline-offset: 2px;
   text-decoration-thickness: 5%;
-  color: #002ab2;
+  color: #66FF66;
 }
 
 .logo-img {
   height: 24px;
 }
-
 
 .nav-links {
   list-style: none;
@@ -78,7 +76,7 @@ header {
   text-decoration: underline;
   text-underline-offset: 2px;
   text-decoration-thickness: 5%;
-  color: #002ab2;
+  color: #66FF66;
 }
 
 /* Kreis, der dem Cursor folgt */
@@ -164,7 +162,7 @@ p.zitat-unterschrift {
 .text_in_box {
   padding: 50px 50px;
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: white;
   background-color: black;
 }
@@ -186,50 +184,20 @@ a[href="about.html"] {
   text-decoration: underline;
   text-underline-offset: 2px;
   text-decoration-thickness: 3%;
-  color: #002ab2;
+  color: #66FF66;
 }
 
 /* Logos und Bilder */
 
-.row {
-  display: flex;
-  flex-direction: row;
-}
-
-.wrappable {
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
-  /* Abstand zwischen den Logos */
-}
-
-/* Standardbreite: 4 Spalten */
-.width-1_4 {
-  width: calc(25% - 12px);
-  /* Vier Spalten minus Abstand */
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.align-center {
-  align-items: center;
-}
-
-/* Padding für jedes Element */
-.px-4 {
-  padding-left: 12px;
-  padding-right: 12px;
-}
-
-.py-3 {
-  padding-top: 12px;
-  padding-bottom: 12px;
 }
 
 .logosize {
-  width: 100%;
-  max-height: 100px;
-  padding: 0;
+  max-width: 100%;
+  height: auto;
 }
 
 .header-image {
@@ -238,16 +206,15 @@ a[href="about.html"] {
   margin-bottom: 10px;
   background-size: cover;
   position: relative;
-  /* Für die Positionierung von .cursor-circle */
 }
+
+/* Bild-Slider */
 
 img.bild {
   width: 100%;
   height: auto;
   margin-bottom: 30px;
 }
-
-/* Karussell */
 
 .carousel {
   padding-bottom: 30px;
@@ -267,7 +234,11 @@ img.bild {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #000000;
+  background-image: none;
+  background-color: #66FF66;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem; 
 }
 
 /* Kontaktseite */
@@ -280,7 +251,6 @@ img.bild {
   height: auto;
 }
 
-/* Form-Container */
 .form-container {
   display: flex;
   flex-direction: column;
@@ -288,7 +258,6 @@ img.bild {
   padding: 20px;
 }
 
-/* Responsives Formular */
 .responsive-form {
   width: 100%;
   max-width: 600px;
@@ -314,7 +283,7 @@ img.bild {
 .responsive-form input[type="submit"] {
   width: 100%;
   padding: 10px;
-  background-color: #002ab2;
+  background-color: #66FF66;
   color: white;
   border: none;
   border-radius: 4px;
@@ -328,9 +297,10 @@ img.bild {
 }
 
 /* Buttons */
+
 .button {
-  background-color: #002ab2;
-  color: white;
+  background-color: #66FF66;
+  color: black !important;
   border-radius: 4px;
   padding: 10px 20px;
   min-width: 250px;
@@ -348,7 +318,6 @@ img.bild {
   color: white;
 }
 
-/* Audio-Container */
 .audio-container {
   text-align: center;
   margin: 10px auto;
@@ -357,26 +326,26 @@ img.bild {
   max-width: 400px;
 }
 
+/* Pulsierende Animation für #playAudioButton */
+
 @keyframes pulse {
   0% {
-    background-color: #000000;
+    background-color: white;
   }
 
   50% {
-    background-color: #002ab2;
+    background-color: #66FF66;
   }
 
   100% {
-    background-color: #000000;
+    background-color: white;
   }
-
-  /* Pulsierende Animation für #playAudioButton */
 }
 
 #playAudioButton {
-  background-color: #002ab2;
-  color: white;
-  border: 1px solid #002ab2;
+  background-color: #66FF66;
+  color: black;
+  border: 1px solid #66FF66;
   padding: 10px 20px;
   width: 100%;
   min-width: 250px;
@@ -390,7 +359,7 @@ img.bild {
 #playAudioButton:hover {
   color: black;
   background-color: #ffffff;
-  border-color: #002ab2;
+  border-color: none;
   animation: none;
 }
 
@@ -439,9 +408,10 @@ img.bild {
   text-decoration: underline;
   text-underline-offset: 2px;
   text-decoration-thickness: 3%;
-  color: #002ab2;
+  color: #66FF66;
 }
 
+/* ------------- Breakpoints ------------------ */
 
 /* Breakpoint: Tablets */
 @media only screen and (max-width: 1040px) {
@@ -457,17 +427,9 @@ img.bild {
     display: none;
   }
 
-  .width-1_4 {
-    width: 25%;
-    /* Bleibt bei 4 Spalten */
-  }
-
-  .row {
-    gap: 8px;
-  }
-
-  .maxheight-6 {
+  .logosize {
     max-height: 80px;
+    /* für kleinere Logos */
   }
 
   .footer div {
@@ -523,22 +485,6 @@ img.bild {
     width: 20%;
     height: auto;
     z-index: 100;
-  }
-
-  .width-1_4 {
-    width: calc 33.33%;
-    /* Drei Spalten */
-  }
-
-  .row {
-    justify-content: center;
-    /* Zentriert das Grid */
-    max-width: 100%;
-    /* Breite passt sich an den Viewport an */
-    margin: 0 auto;
-    /* Zentriert das gesamte Row-Element */
-    gap: 0px;
-    /* Kein Abstand zwischen den Spalten */
   }
 
   .footer {
@@ -645,17 +591,6 @@ img.bild {
     margin-top: 0px;
     text-align: left;
     /* Headlines mit Linie drunter */
-  }
-
-  .row {
-    justify-content: center;
-    /* Zentriert das Grid */
-    max-width: 100%;
-    /* Breite passt sich an den Viewport an */
-    margin: 0 auto;
-    /* Zentriert das gesamte Row-Element */
-    gap: 0px;
-    /* Kein Abstand zwischen den Spalten */
   }
 
   .footer {
